@@ -17,15 +17,10 @@ FLAGS = None
 
 def loadData(file_name, batch_size):
 	x = np.load(file_name+"_x.npy")
-	y = np.load(file_name+"_y.npy")
+	//y = np.load(file_name+"_y.npy")
 	print(x.shape)
 	
-	#f = open(file_name+"_ydata", "w")
-	#for yy in y:
-	#	f.write(str(yy))
-	#	f.write("\n")
-	#f.close()
-	#img_g = np.ones([48, 48, 3])
+	
 	
 	#print(y)
 	count = len(x) // batch_size
